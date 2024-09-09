@@ -3,22 +3,28 @@ const common_vendor = require("../../common/vendor.js");
 const common_assets = require("../../common/assets.js");
 if (!Array) {
   const _easycom_home_head2 = common_vendor.resolveComponent("home-head");
-  const _easycom_uni_icons2 = common_vendor.resolveComponent("uni-icons");
+  const _easycom_soup_tab_group2 = common_vendor.resolveComponent("soup-tab-group");
+  const _easycom_soup_text_content2 = common_vendor.resolveComponent("soup-text-content");
+  const _easycom_interactive_bar2 = common_vendor.resolveComponent("interactive-bar");
   const _easycom_uni_popup2 = common_vendor.resolveComponent("uni-popup");
-  (_easycom_home_head2 + _easycom_uni_icons2 + _easycom_uni_popup2)();
+  (_easycom_home_head2 + _easycom_soup_tab_group2 + _easycom_soup_text_content2 + _easycom_interactive_bar2 + _easycom_uni_popup2)();
 }
 const _easycom_home_head = () => "../../components/home-head/home-head.js";
-const _easycom_uni_icons = () => "../../uni_modules/uni-icons/components/uni-icons/uni-icons.js";
+const _easycom_soup_tab_group = () => "../../components/soup-tab-group/soup-tab-group.js";
+const _easycom_soup_text_content = () => "../../components/soup-text-content/soup-text-content.js";
+const _easycom_interactive_bar = () => "../../components/interactive-bar/interactive-bar.js";
 const _easycom_uni_popup = () => "../../uni_modules/uni-popup/components/uni-popup/uni-popup.js";
 if (!Math) {
-  (_easycom_home_head + _easycom_uni_icons + _easycom_uni_popup)();
+  (_easycom_home_head + _easycom_soup_tab_group + _easycom_soup_text_content + _easycom_interactive_bar + _easycom_uni_popup)();
 }
 const _sfc_main = {
   __name: "index",
   setup(__props) {
     const usePopup = common_vendor.ref(null);
     common_vendor.onReady(() => {
-      usePopup.value.open();
+      let useState = common_vendor.index.getStorageSync("useState") || false;
+      if (!useState)
+        usePopup.value.open();
     });
     const closeUsePopup = () => {
       usePopup.value.close();
@@ -35,51 +41,31 @@ const _sfc_main = {
     return (_ctx, _cache) => {
       return {
         a: common_vendor.f(listData.value, (item, index, i0) => {
-          return common_vendor.e({
-            a: common_assets._imports_0
-          }, {
-            c: "fd6b4554-1-" + i0,
-            d: "fd6b4554-2-" + i0,
-            e: "fd6b4554-3-" + i0,
-            f: "fd6b4554-4-" + i0,
-            g: index
-          });
+          return {
+            a: "1cf27b2a-1-" + i0,
+            b: "1cf27b2a-2-" + i0,
+            c: "1cf27b2a-3-" + i0,
+            d: index
+          };
         }),
-        b: common_assets._imports_2,
-        c: common_vendor.p({
-          type: "redo",
-          size: "28",
-          color: "#999"
+        b: common_vendor.p({
+          maxline: "5"
         }),
-        d: common_vendor.p({
-          type: "heart",
-          size: "28",
-          color: "#999"
-        }),
-        e: common_vendor.p({
-          type: "star",
-          size: "28",
-          color: "#999"
-        }),
-        f: common_vendor.p({
-          type: "redo",
-          size: "28",
-          color: "#999"
-        }),
-        g: common_vendor.o(swiperChange),
-        h: lineWidth.value + "%",
-        i: common_assets._imports_3,
-        j: common_assets._imports_4,
-        k: common_vendor.o(closeUsePopup),
-        l: common_vendor.sr(usePopup, "fd6b4554-5", {
+        c: common_vendor.o(swiperChange),
+        d: lineWidth.value + "%",
+        e: common_assets._imports_0,
+        f: common_assets._imports_1,
+        g: common_vendor.o(closeUsePopup),
+        h: common_vendor.sr(usePopup, "1cf27b2a-4", {
           "k": "usePopup"
         }),
-        m: common_vendor.o(closeUsePopup),
-        n: common_vendor.p({
+        i: common_vendor.o(closeUsePopup),
+        j: common_vendor.p({
           type: "center"
         })
       };
     };
   }
 };
-wx.createPage(_sfc_main);
+const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-1cf27b2a"]]);
+wx.createPage(MiniProgramPage);

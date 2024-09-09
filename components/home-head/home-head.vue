@@ -1,5 +1,5 @@
 <template>
-	<view class="homeHead">
+	<view class="homeHead" @click="showLunar">
 		<view class="statusBar" :style="{height:getStatusBarHeight()+'px'}"></view>
 		<view class="titleBar" :style="{height:getTitleBarHeight()+'px'}">今日份的鸡汤送达喽~~</view>
 		<view class="content">
@@ -28,11 +28,15 @@ import {getCurrentDayOfWeek} from "@/utils/tools.js"
 import {getLunar} from "@/utils/lunar.js"
 
 //获得农历
-const lunarYear = getLunar(2024,9,1,1,1)
+const lunarYear = getLunar(1996,7,8,13)
 onMounted(()=>{
 	console.log('123',lunarYear)
 })
 
+const showLunar = () =>{
+	const lunarYear = getLunar(1996,7,8,13)
+	console.log('lunar',lunarYear)
+}
 
 </script>
 

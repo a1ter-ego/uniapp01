@@ -15,10 +15,14 @@ if (!Math) {
 const _sfc_main = {
   __name: "home-head",
   setup(__props) {
-    const lunarYear = utils_lunar.getLunar(2024, 9, 1, 1);
+    const lunarYear = utils_lunar.getLunar(1996, 7, 8, 13);
     common_vendor.onMounted(() => {
       console.log("123", lunarYear);
     });
+    const showLunar = () => {
+      const lunarYear2 = utils_lunar.getLunar(1996, 7, 8, 13);
+      console.log("lunar", lunarYear2);
+    };
     return (_ctx, _cache) => {
       return {
         a: common_vendor.unref(utils_system.getStatusBarHeight)() + "px",
@@ -32,7 +36,8 @@ const _sfc_main = {
           format: "yyyy年MM月"
         }),
         e: common_vendor.t(common_vendor.unref(utils_tools.getCurrentDayOfWeek)()),
-        f: common_assets._imports_0$1
+        f: common_assets._imports_0$1,
+        g: common_vendor.o(showLunar)
       };
     };
   }

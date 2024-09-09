@@ -23,32 +23,32 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.homeLayout {
+.homeLayout.data-v-1cf27b2a {
   height: 100vh;
   display: flex;
   flex-direction: column;
   background: #bde1fb;
 }
-.homeLayout .body {
+.homeLayout .body.data-v-1cf27b2a {
   flex: 1;
   background: #fff;
   border-radius: 50rpx 50rpx 0 0;
   overflow: hidden;
 }
-.homeLayout .body .swiperOut {
+.homeLayout .body .swiperOut.data-v-1cf27b2a {
   height: calc(100% - 8rpx);
 }
-.homeLayout .body .swiperOut swiper {
+.homeLayout .body .swiperOut swiper.data-v-1cf27b2a {
   height: 100%;
 }
-.homeLayout .body .swiperOut swiper-item .content {
+.homeLayout .body .swiperOut swiper-item .content.data-v-1cf27b2a {
   height: calc(100% - 130rpx);
   display: flex;
   justify-content: center;
   padding: 0 30rpx;
   flex-direction: column;
 }
-.homeLayout .body .swiperOut swiper-item .content .soupTabGroup .tab {
+.homeLayout .body .swiperOut swiper-item .content .soupTabGroup .tab.data-v-1cf27b2a {
   height: 56rpx;
   width: -webkit-fit-content;
   width: fit-content;
@@ -61,7 +61,7 @@
   padding: 0 20rpx;
   border-radius: 56rpx;
 }
-.homeLayout .body .swiperOut swiper-item .content .soupTabGroup .tab .icon {
+.homeLayout .body .swiperOut swiper-item .content .soupTabGroup .tab .icon.data-v-1cf27b2a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,86 +69,26 @@
   height: 36rpx;
   border-radius: 50%;
 }
-.homeLayout .body .swiperOut swiper-item .content .soupTabGroup .tab .icon image {
+.homeLayout .body .swiperOut swiper-item .content .soupTabGroup .tab .icon image.data-v-1cf27b2a {
   width: 80%;
   height: 80%;
 }
-.homeLayout .body .swiperOut swiper-item .content .soupTabGroup .tab .text {
+.homeLayout .body .swiperOut swiper-item .content .soupTabGroup .tab .text.data-v-1cf27b2a {
   padding-left: 10rpx;
 }
-.homeLayout .body .swiperOut swiper-item .content .soupTabGroup .tab:nth-child(1) {
+.homeLayout .body .swiperOut swiper-item .content .soupTabGroup .tab.data-v-1cf27b2a:nth-child(1) {
   background: #fff3f7;
 }
-.homeLayout .body .swiperOut swiper-item .content .soupTabGroup .tab:nth-child(1) .icon {
+.homeLayout .body .swiperOut swiper-item .content .soupTabGroup .tab:nth-child(1) .icon.data-v-1cf27b2a {
   background: linear-gradient(to right, #f83162, #ff7795);
 }
-.homeLayout .body .swiperOut swiper-item .content .soupTabGroup .tab:nth-child(2) {
+.homeLayout .body .swiperOut swiper-item .content .soupTabGroup .tab.data-v-1cf27b2a:nth-child(2) {
   background: #edfdf0;
 }
-.homeLayout .body .swiperOut swiper-item .content .soupTabGroup .tab:nth-child(2) .icon {
+.homeLayout .body .swiperOut swiper-item .content .soupTabGroup .tab:nth-child(2) .icon.data-v-1cf27b2a {
   background: linear-gradient(to right, #4f9153, #4bbb8b);
 }
-.homeLayout .body .swiperOut swiper-item .content .main {
-  font-size: 50rpx;
-  font-weight: lighter;
-  width: 100%;
-  letter-spacing: 0.05em;
-  line-height: 1.8em;
-  margin: 10rpx 0 60rpx 0;
-  display: -webkit-box;
-  /* 将元素作为块状容器 */
-  -webkit-line-clamp: 5;
-  /* 限制显示的最大行数为3行 */
-  -webkit-box-orient: vertical;
-  /* 设置子元素垂直布局 */
-  overflow: hidden;
-  /* 超出容器范围的内容不显示 */
-}
-.homeLayout .body .swiperOut swiper-item .content .author .line {
-  width: 70rpx;
-  height: 5rpx;
-  background: #f0f0f0;
-}
-.homeLayout .body .swiperOut swiper-item .content .author .userInfo {
-  display: flex;
-  align-items: center;
-  font-size: 26rpx;
-  color: #888;
-  padding-top: 30rpx;
-}
-.homeLayout .body .swiperOut swiper-item .content .author .avatar {
-  width: 40rpx;
-  height: 40rpx;
-}
-.homeLayout .body .swiperOut swiper-item .content .author .avatar image {
-  width: 100%;
-  height: 100%;
-}
-.homeLayout .body .swiperOut swiper-item .content .author .name {
-  padding-left: 12rpx;
-}
-.homeLayout .body .swiperOut swiper-item .content .author .from {
-  padding-left: 12rpx;
-}
-.homeLayout .body .swiperOut swiper-item .info {
-  height: 130rpx;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 30rpx;
-}
-.homeLayout .body .swiperOut swiper-item .info .item {
-  display: flex;
-  align-items: center;
-  padding: 10rpx 15rpx;
-}
-.homeLayout .body .swiperOut swiper-item .info .left .item {
-  padding-left: 0;
-}
-.homeLayout .body .swiperOut swiper-item .info .right {
-  display: flex;
-}
-.homeLayout .body .swiperOut swiper .ad {
+.homeLayout .body .swiperOut swiper .ad.data-v-1cf27b2a {
   background: #F8F8F8;
   display: flex;
   flex-direction: column;
@@ -156,28 +96,28 @@
   align-items: center;
   text-align: center;
 }
-.homeLayout .body .swiperOut swiper .ad .message {
+.homeLayout .body .swiperOut swiper .ad .message.data-v-1cf27b2a {
   margin-top: 80rpx;
   background: #fff;
   border-radius: 30rpx;
   padding: 40rpx;
 }
-.homeLayout .body .swiperOut swiper .ad .message .title {
+.homeLayout .body .swiperOut swiper .ad .message .title.data-v-1cf27b2a {
   font-size: 46rpx;
   padding-bottom: 20rpx;
   border-bottom: 1px solid #eee;
   margin-bottom: 20rpx;
 }
-.homeLayout .body .swiperOut swiper .ad .message .des {
+.homeLayout .body .swiperOut swiper .ad .message .des.data-v-1cf27b2a {
   font-size: 32rpx;
   color: #555;
   line-height: 1.8em;
 }
-.homeLayout .body .swiperOut swiper .ad .btnGroup {
+.homeLayout .body .swiperOut swiper .ad .btnGroup.data-v-1cf27b2a {
   font-size: 30rpx;
   margin-bottom: 40rpx;
 }
-.homeLayout .body .swiperOut swiper .ad .btnGroup .btn {
+.homeLayout .body .swiperOut swiper .ad .btnGroup .btn.data-v-1cf27b2a {
   width: 400rpx;
   height: 100rpx;
   border-radius: 100rpx;
@@ -189,30 +129,30 @@
   color: #203e5f;
   margin-bottom: 10rpx;
 }
-.homeLayout .body .swiperOut swiper .ad .btnGroup .text {
+.homeLayout .body .swiperOut swiper .ad .btnGroup .text.data-v-1cf27b2a {
   padding: 20rpx 0;
 }
-.homeLayout .body .progress {
+.homeLayout .body .progress.data-v-1cf27b2a {
   height: 8rpx;
   width: 100%;
   background: #eee;
 }
-.homeLayout .body .progress .line {
+.homeLayout .body .progress .line.data-v-1cf27b2a {
   height: 100%;
   background: linear-gradient(to right, #bce0fd, #74dbef);
 }
-.usePopup {
+.usePopup.data-v-1cf27b2a {
   padding-top: 15vh;
   display: flex;
   flex-direction: column;
 }
-.usePopup image {
+.usePopup image.data-v-1cf27b2a {
   height: 150rpx;
   transform: translateY(100rpx);
   opacity: 0;
-  animation: useAnimate 2s infinite;
+  animation: useAnimate-1cf27b2a 2s infinite;
 }
-@keyframes useAnimate {
+@keyframes useAnimate-1cf27b2a {
 0% {
     transform: translateY(100rpx);
     opacity: 0;

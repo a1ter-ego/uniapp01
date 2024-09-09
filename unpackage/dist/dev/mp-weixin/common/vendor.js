@@ -7666,6 +7666,12 @@ const pages = [
     style: {
       navigationBarTitleText: "我的"
     }
+  },
+  {
+    path: "pages/detail/detail",
+    style: {
+      navigationBarTitleText: "鸡汤详情"
+    }
   }
 ];
 const globalStyle = {
@@ -7988,7 +7994,7 @@ class v {
 function I(e2) {
   return e2 && "string" == typeof e2 ? JSON.parse(e2) : e2;
 }
-const S = true, b = "mp-weixin", A = I(define_process_env_UNI_SECURE_NETWORK_CONFIG_default), C = b, P = I('{\n    "address": [\n        "127.0.0.1",\n        "172.17.111.86"\n    ],\n    "debugPort": 9000,\n    "initialLaunchType": "local",\n    "servePort": 7000,\n    "skipFiles": [\n        "<node_internals>/**",\n        "D:/Program Files/HBuilderX/plugins/unicloud/**/*.js"\n    ]\n}\n'), T = I('[{"provider":"alipay","spaceName":"unicloud","spaceId":"env-00jxh5kapyr9","spaceAppId":"2021004164673116","accessKey":"LApQx2USUdnpmruK","secretKey":"ORR9KF6vz3RX701s"}]') || [];
+const S = true, b = "mp-weixin", A = I(define_process_env_UNI_SECURE_NETWORK_CONFIG_default), C = b, P = I('{\n    "address": [\n        "127.0.0.1",\n        "172.17.111.86"\n    ],\n    "debugPort": 9001,\n    "initialLaunchType": "local",\n    "servePort": 7001,\n    "skipFiles": [\n        "<node_internals>/**",\n        "D:/Program Files/HBuilderX/plugins/unicloud/**/*.js"\n    ]\n}\n'), T = I('[{"provider":"alipay","spaceName":"unicloud","spaceId":"env-00jxh5kapyr9","spaceAppId":"2021004164673116","accessKey":"LApQx2USUdnpmruK","secretKey":"ORR9KF6vz3RX701s"}]') || [];
 let O = "";
 try {
   O = "__UNI__A906B56";

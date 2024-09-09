@@ -3,7 +3,9 @@
   "navigationStyle": "custom",
   "usingComponents": {
     "home-head": "../../components/home-head/home-head",
-    "uni-icons": "../../uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "soup-tab-group": "../../components/soup-tab-group/soup-tab-group",
+    "soup-text-content": "../../components/soup-text-content/soup-text-content",
+    "interactive-bar": "../../components/interactive-bar/interactive-bar",
     "uni-popup": "../../uni_modules/uni-popup/components/uni-popup/uni-popup"
   }
 }

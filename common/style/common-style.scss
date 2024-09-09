@@ -1,7 +1,14 @@
-view,text{
+view,text,swiper,swiper-item{
 	box-sizing: border-box;
 }
 
-page{
-	
+image{
+	width: 100rpx;
+	height: 100rpx;
 }
+
+.safe-area-bottom{
+	width:100%;
+	height: env(safe-area-inset-bottom);
+}
+

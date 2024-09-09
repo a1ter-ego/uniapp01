@@ -7,62 +7,12 @@
 			<view class="swiperOut">
 				<swiper vertical circular @change="swiperChange">
 					<swiper-item v-for="(item, index) in listData" :key="index">
-						<view class="content">
-							<view class="soupTabGroup">
-								<view class="tab" v-if="true">
-									<view class="icon">
-										<image src="../../static/images/xin-icon.png" mode="aspectFill"></image>
-									</view>
-									<view class="text">心灵鸡汤</view>
-								</view>
-								<view class="tab" v-else>
-									<view class="icon">
-										<image src="../../static/images/du-icon.png" mode="aspectFill"></image>
-									</view>
-									<view class="text">毒鸡汤</view>
-								</view>
-
-								<text class="main">
-									生活就像一杯茶，\n
-									不会苦一辈子，\n
-									但总会苦一阵子。\n
-									无论遇到什么困难，\n
-									都要相信自己有能力去克服。\n
-								</text>
-								<view class="author">
-									<view class="line"></view>
-									<view class="userInfo">
-										<view class="avatar">
-											<image src="../../static/images/logo.png" mode="aspectFill"></image>
-										</view>
-										<view class="name">张三</view>
-										<view class="from">摘自：读者</view>
-									</view>
-								</view>
-							</view>
-						</view>
-						<view class="info">
-							<view class="left">
-								<view class="item">
-									<uni-icons type="redo" size="28" color="#999"> </uni-icons>
-									<text class=""></text>
-								</view>
-							</view>
-							<view class="right">
-								<view class="item">
-									<uni-icons type="heart" size="28" color="#999"> </uni-icons>
-									<text class="">12</text>
-								</view>
-								<view class="item">
-									<uni-icons type="star" size="28" color="#999"> </uni-icons>
-									<text class="">33</text>
-								</view>
-								<view class="item">
-									<uni-icons type="redo" size="28" color="#999"> </uni-icons>
-									<text class=""></text>
-								</view>
-							</view>
-						</view>
+						<navigator url="/pages/detail/detail"  class="content">
+							<soup-tab-group></soup-tab-group>
+							<soup-text-content maxline='5'></soup-text-content>
+						</navigator>
+						
+						<interactive-bar></interactive-bar>
 					</swiper-item>
 
 					<swiper-item class="ad">
@@ -84,10 +34,10 @@
 		</view>
 
 		<uni-popup ref="usePopup" type="center" @maskClick="closeUsePopup">
-		  <view class="usePopup">
-			<image src="../../static/images/arrow.png" mode="heightFix"></image>
-		    <image src="../../static/images/upward.png" mode="heightFix" @click="closeUsePopup"></image>
-		  </view>
+			<view class="usePopup">
+				<image src="../../static/images/arrow.png" mode="heightFix"></image>
+				<image src="../../static/images/upward.png" mode="heightFix" @click="closeUsePopup"></image>
+			</view>
 		</uni-popup>
 
 
@@ -105,8 +55,8 @@
 
 	const usePopup = ref(null)
 	onReady(() => {
-		// let useState = uni.getStorageSync("useState") || false;
-		let useState = false
+		let useState = uni.getStorageSync("useState") || false;
+		// let useState = false
 		if (!useState) usePopup.value.open();
 	})
 	//点击操作的遮罩层
@@ -130,7 +80,7 @@
 	})
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.homeLayout {
 		height: 100vh;
 		display: flex;
@@ -211,79 +161,11 @@
 								}
 							}
 
-							.main {
-								font-size: 50rpx;
-								font-weight: lighter;
-								width: 100%;
-								letter-spacing: 0.05em;
-								line-height: 1.8em;
-								margin: 10rpx 0 60rpx 0;
-								@include maxline(5)
-							}
-
-							.author {
-								.line {
-									width: 70rpx;
-									height: 5rpx;
-									background: #f0f0f0;
-								}
-
-								.userInfo {
-									display: flex;
-									align-items: center;
-									font-size: 26rpx;
-									color: #888;
-									padding-top: 30rpx;
-								}
-
-								.avatar {
-									width: 40rpx;
-									height: 40rpx;
-
-									image {
-										width: 100%;
-										height: 100%;
-									}
-								}
-
-								.name {
-									padding-left: 12rpx;
-								}
-
-								.from {
-									padding-left: 12rpx;
-								}
-							}
+							
 
 						}
 
-						.info {
-							height: 130rpx;
-							display: flex;
-							justify-content: space-between;
-							align-items: center;
-							padding: 0 30rpx;
-
-							.item {
-								display: flex;
-								align-items: center;
-								padding: 10rpx 15rpx;
-
-							}
-
-							.left {
-								.item {
-									padding-left: 0;
-								}
-							}
-
-							.right {
-								display: flex;
-
-
-							}
-						}
-
+					
 					}
 
 					.ad {
@@ -355,31 +237,28 @@
 
 
 	.usePopup {
-	  padding-top: 15vh;
-	  display: flex;
-	  flex-direction: column;
-	  image {
-	    height: 150rpx;
-	    transform: translateY(100rpx);
-	    opacity: 0;
-	    animation: useAnimate 2s infinite;
-	  }
-	 
+		padding-top: 15vh;
+		display: flex;
+		flex-direction: column;
+
+		image {
+			height: 150rpx;
+			transform: translateY(100rpx);
+			opacity: 0;
+			animation: useAnimate 2s infinite;
+		}
+
 	}
-	
+
 	@keyframes useAnimate {
-	  0% {
-	    transform: translateY(100rpx);
-	    opacity: 0;
-	  }
-	  100% {
-	    transform: translateY(-100rpx);
-	    opacity: 1;
-	  }
+		0% {
+			transform: translateY(100rpx);
+			opacity: 0;
+		}
+
+		100% {
+			transform: translateY(-100rpx);
+			opacity: 1;
+		}
 	}
-	
-
-
-	
-	
 </style>
