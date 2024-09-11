@@ -1,0 +1,1 @@
+<view class="soupTabGroup"><view wx:if="{{true}}" class="tab"><view class="icon"><image src="{{a}}" mode="aspectFill"></image></view><view class="text">心灵鸡汤</view></view><view wx:else class="tab"><view class="icon"><image src="{{b}}" mode="aspectFill"></image></view><view class="text">毒鸡汤</view></view></view>

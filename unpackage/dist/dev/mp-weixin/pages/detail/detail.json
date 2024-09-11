@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "鸡汤详情",
+  "usingComponents": {
+    "soup-tab-group": "../../components/soup-tab-group/soup-tab-group",
+    "soup-text-content": "../../components/soup-text-content/soup-text-content",
+    "comment-item": "../../components/comment-item/comment-item",
+    "interactive-bar": "../../components/interactive-bar/interactive-bar"
+  }
+}
